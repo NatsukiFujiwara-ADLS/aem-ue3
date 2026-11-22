@@ -6,7 +6,7 @@
  *
  * @param {HTMLElement} block represents the block's' DOM element/tree
  * */
-function    (block) {
+function getOptions(block) {
   // Get the block's classes, excluding 'block' and 'teaser'.
   return [...block.classList].filter((c) => !['block', 'teaser'].includes(c));
 }
